@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Software Developer</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script> -->
+    <script src="index.js"></script>
+    <!-- email js script -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("_OZ8MoGRPpeTpC8tC");
+    })();
+    </script>
+</head>
+<body>
+    <!-- landing section start here -->
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <img id="logo" src="./assets/pngegg.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">
+                    About
+                    </a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="
+                    nav__link--anchor 
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">
+                    Projects
+                    </a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">
+                    Contact
+                    </a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">
+                   <i class="fas fa-adjust"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="darkblue rajeev">I'm Rajeev.</h1>
+                <p class="header__para">
+                    I am <b class="darkblue">Frontend Software Engineer</b>
+                    with strong passion for building web application with awesome user
+                    experiences that definitely impact the sector. <br>
+                    Here's a bit more <b class="darkblue click" onclick="toggleModal()">about me</b>
+                </p>
+                <div class="social__list">
+                    <a href="#" class="social__link click" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                    <a href="#" class="social__link click" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rajeev-kumar-2b7a9821b/" class="social__link click" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- mail button -->
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">
+                    Here's a bit about me
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--about">
+                    Frontend Software Engineer
+                </h4>
+                <p class="modal__para">
+                    I'm Rajeev Kumar indian <b class="darkblue">Frontend Software Engineer</b>
+                    with strong passion for developing web application with 
+                    <b class="darkblue">awesome user experiences.</b> <br>
+                    I currently work on extremely difficult engineering problems
+                    and continuously learn from some top 
+                    <b class="darkblue">software</b>  and 
+                    <b class="darkblue">experienced</b> engineer from 
+                    <b class="darkblue"> Google, Microsoft, Amazon, Adobe, Meta, Instagram.</b>
+                 
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/html.png" alt="">
+                        <span class="modal__language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/css.png" alt="">
+                        <span class="modal__language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/js.png" alt="">
+                        <span class="modal__language__name">JS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/react.png" alt="">
+                        <span class="modal__language__name">REACT</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/node.png" alt="">
+                        <span class="modal__language__name">NODE</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/php.png" alt="">
+                        <span class="modal__language__name">PHP</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/api.png" alt="">
+                        <span class="modal__language__name">API</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/ds.png" alt="">
+                        <span class="modal__language__name">DS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/c++.png" alt="">
+                        <span class="modal__language__name">C++</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/sql.png" alt="">
+                        <span class="modal__language__name">SQL</span>
+                    </figure>
+                    
+                </div>
+
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">
+                    Let's have a chat!
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                   I'm currently open to new opportunities.
+                </h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label  class="form__item--label">Name</label>
+                        <input class="input" type="text" name="user_name" required>
+                    </div>
+                    <div class="form__item">
+                        <label  class="form__item--label">Email</label>
+                        <input class="email" type="text" name="user_email" required>
+                    </div>
+                    <div class="form__item">
+                        <label  class="form__item--label">Message</label>
+                        <textarea class="input" type="text" name="message" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Sent it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the Message! looking forward to speaking to you soon.
+                </div>
+            </div> 
+        </div>
+        <img src="./assets/cursor.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/aeroplane.svg" class="shape shape--2">
+        <img src="./assets/watch.svg" class="shape shape--3">
+        <img src="./assets/cursor2.svg" class="shape shape--4">
+        <img src="./assets/arrow.svg" class="shape shape--5">
+        <img src="./assets/laptop.svg" class="shape shape--6">
+        <img src="./assets/bulb.svg" class="shape shape--7">
+        <img src="./assets/man.svg" class="shape shape--8">
+    </section>
+    <!-- landing section end here -->
+    <!-- projects section start here -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="darkblue">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/ushaortho.jpg" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    car sales projects
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    html css javascript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Repellat libero molestias
+                                     eligendi laborum nesciunt, eum vitae consequatur
+                                      iusto atque placeat at cupiditate officia, 
+                                      corrupti itaque dolor magni quasi, hic alias.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://www.ushaortho.com/" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.ushaortho.com/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- projects section end here -->
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row footer_row">
+                <figure>
+                    <img class="footer__logo--img" src="./assets/pngegg.png" alt="">
+                </figure>
+                <div class="footer__social__list">
+                    <a href="#" class="
+                    footer__social__link
+                    link__hover--effect
+                    link__hover--effect--white
+                    "
+                    >
+                        Github
+                    </a>
+                    <a href="#" target="_blank" class="
+                    footer__social__link
+                    link__hover--effect
+                    link__hover--effect--white
+                    "
+                    >
+                        LinkedIn
+                    </a>
+                    <a href="#" onclick="toggleModal()" class=" 
+                    footer__social__link
+                    link__hover--effect
+                    link__hover--effect--white
+                    "
+                    >
+                        Contact
+                    </a>
+                    <a href="./assets/resume.pdf" target="_blank" download class="
+                    footer__social__link
+                    link__hover--effect
+                    link__hover--effect--white
+                    "
+                    >
+                        Resume
+                    </a>
+                    
+                </div>  
+                <div class="footer__copyright">Developed By Rajeev Kumar</div>  
+             </div>
+        </div>
+    </footer>
+</body>
+</html>
