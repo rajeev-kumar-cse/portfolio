@@ -428,7 +428,7 @@ input:focus, textarea:focus{
 }
 .project__wrapper:hover .project__description{
     opacity: 1;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 }
 
 .project__description{
@@ -436,7 +436,7 @@ input:focus, textarea:focus{
     top: 50%;
     left: 90px;
     opacity: 1;
-    transform: translateY(140%);
+    transform: translateY(130%);
     transition: opacity 300ms, transform 450ms ease;
     color: white;
     max-width: 550px;
