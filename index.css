@@ -436,7 +436,7 @@ input:focus, textarea:focus{
     top: 50%;
     left: 90px;
     opacity: 1;
-    transform: translateY(130%);
+    transform: translateY(140%);
     transition: opacity 300ms, transform 450ms ease;
     color: white;
     max-width: 550px;
